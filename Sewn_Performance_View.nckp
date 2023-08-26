@@ -1,0 +1,437 @@
+{
+    "formatVersion": 0,
+    "type": {
+        "name": "UI",
+        "version": 0
+    },
+    "value": {
+        "performanceView": {
+            "background": {
+                "color": 15790052,
+                "image": "bkgnd.png"
+            },
+            "controls": [
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "blk.png",
+                            "show": true
+                        },
+                        "common": {
+                            "id": "machineLabel",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 25,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 0,
+                            "string": "Sewing Machine"
+                        }
+                    }
+                },
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "blk.png",
+                            "show": true
+                        },
+                        "common": {
+                            "id": "attackLabel",
+                            "infoPaneText": "Attack",
+                            "position": {
+                                "x": 140,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 0,
+                            "positionY": 0,
+                            "string": ""
+                        }
+                    }
+                },
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "toiletmicpng.png",
+                            "show": false
+                        },
+                        "common": {
+                            "id": "toiletmic",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 0,
+                            "positionY": 0,
+                            "string": ""
+                        }
+                    }
+                },
+                {
+                    "index": 6,
+                    "value": {
+                        "common": {
+                            "id": "Machine",
+                            "infoPaneText": "Machine",
+                            "position": {
+                                "x": 25,
+                                "y": 20
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "entries": [
+                            {
+                                "show": true,
+                                "string": "Singer",
+                                "value": 1
+                            },
+                            {
+                                "show": true,
+                                "string": "Universal",
+                                "value": 2
+                            }
+                        ],
+                        "image": "",
+                        "text": {
+                            "fonts": {
+                                "hoverOff": {
+                                    "custom": "",
+                                    "type": 1
+                                },
+                                "hoverOn": {
+                                    "custom": "",
+                                    "type": 10
+                                },
+                                "off": {
+                                    "custom": "",
+                                    "type": 1
+                                },
+                                "on": {
+                                    "custom": "",
+                                    "type": 10
+                                },
+                                "pressedOff": {
+                                    "custom": "",
+                                    "type": 1
+                                },
+                                "pressedOn": {
+                                    "custom": "",
+                                    "type": 10
+                                }
+                            },
+                            "horizontalAlignment": 0,
+                            "positionY": 0,
+                            "shiftOnPress": true,
+                            "string": "Machine"
+                        }
+                    }
+                },
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "blk.png",
+                            "show": true
+                        },
+                        "common": {
+                            "id": "releaseLabel",
+                            "infoPaneText": "Release",
+                            "position": {
+                                "x": 255,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 0,
+                            "positionY": 0,
+                            "string": ""
+                        }
+                    }
+                },
+                {
+                    "index": 3,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 2,
+                                "on": true
+                            },
+                            "name": "Release"
+                        },
+                        "common": {
+                            "id": "releaseKnob",
+                            "infoPaneText": "Release",
+                            "position": {
+                                "x": 255,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "name": "Release",
+                        "ratio": 1,
+                        "unit": 0,
+                        "value": {
+                            "default": 1,
+                            "max": 1000000,
+                            "min": 0
+                        }
+                    }
+                },
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "blk.png",
+                            "show": true
+                        },
+                        "common": {
+                            "id": "pickupLabel",
+                            "infoPaneText": "Electro-magnetic Pickup Level",
+                            "position": {
+                                "x": 500,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 0,
+                            "string": "Pickup Level"
+                        }
+                    }
+                },
+                {
+                    "index": 4,
+                    "value": {
+                        "background": {
+                            "frameIndex": 0,
+                            "image": "blk.png",
+                            "show": true
+                        },
+                        "common": {
+                            "id": "micLabel",
+                            "infoPaneText": "",
+                            "position": {
+                                "x": 375,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 18,
+                                "width": 87
+                            },
+                            "zLayer": 1
+                        },
+                        "enableDragAndDrop": false,
+                        "text": {
+                            "font": {
+                                "custom": "",
+                                "type": 1
+                            },
+                            "horizontalAlignment": 1,
+                            "positionY": 0,
+                            "string": "Microphone Level"
+                        }
+                    }
+                },
+                {
+                    "index": 7,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 3,
+                                "on": true
+                            },
+                            "name": "Mic Level"
+                        },
+                        "common": {
+                            "id": "micLevel",
+                            "infoPaneText": "Microphone Level",
+                            "position": {
+                                "x": 375,
+                                "y": 20
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "mouse": {
+                            "orientation": 1,
+                            "scale": 1500
+                        },
+                        "value": {
+                            "default": 7500000,
+                            "max": 10000000,
+                            "min": 0
+                        }
+                    }
+                },
+                {
+                    "index": 7,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 4,
+                                "on": true
+                            },
+                            "name": "Pickup Level"
+                        },
+                        "common": {
+                            "id": "pickupLevel",
+                            "infoPaneText": "Electro-magnetic Pickup Level",
+                            "position": {
+                                "x": 500,
+                                "y": 20
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "image": "",
+                        "mouse": {
+                            "orientation": 1,
+                            "scale": 1500
+                        },
+                        "value": {
+                            "default": 50,
+                            "max": 1000000,
+                            "min": 0
+                        }
+                    }
+                },
+                {
+                    "index": 3,
+                    "value": {
+                        "automation": {
+                            "disableUserAssign": false,
+                            "hostAutomation": {
+                                "id": 1,
+                                "on": true
+                            },
+                            "name": "Attack"
+                        },
+                        "common": {
+                            "id": "attackKnob",
+                            "infoPaneText": "Attack",
+                            "position": {
+                                "x": 140,
+                                "y": 0
+                            },
+                            "show": true,
+                            "size": {
+                                "height": 0,
+                                "width": 0
+                            },
+                            "zLayer": 1
+                        },
+                        "name": "Attack",
+                        "ratio": 1,
+                        "unit": 0,
+                        "value": {
+                            "default": 1,
+                            "max": 1000000,
+                            "min": 0
+                        }
+                    }
+                }
+            ],
+            "icon": {
+                "image": "",
+                "show": false
+            },
+            "size": {
+                "height": 405,
+                "width": 633
+            }
+        }
+    }
+}
