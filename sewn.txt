@@ -1,0 +1,85 @@
+on init
+	load_performance_view("Sewn_Performance_View.nckp")
+
+	declare const $NUM_LAYERS := 4
+	{
+	**this was declared by Creator Tools apparently**
+	declare ui_knob $attackKnob (0, 100, 1)
+	declare ui_knob $releaseKnob (0, 100, 1)
+	}
+	make_persistent($attackKnob)
+	make_persistent($releaseKnob)
+	make_persistent($Machine)
+	make_persistent($micLevel)
+	make_persistent($pickupLevel)
+
+	declare $item_idx := 0
+	declare $a
+	set_control_par(get_ui_id($micLevel), $CONTROL_PAR_DEFAULT_VALUE, 70)
+	set_control_par(get_ui_id($pickupLevel), $CONTROL_PAR_DEFAULT_VALUE, 30)
+
+end on
+
+{OKAY - there needs to be four groups. Mic/Pickup for each sewing machine.
+That means that:
+
+Group 0 = Universal Pickup
+Group 1 = Universal Microphone
+Group 2 = Singer Pickup
+Group 3 = Singer Microphone
+
+The mic/DI controls need to be updated when the dropdown menu selection is changed.
+If dropdown menu is set to value 0, then the Mic level value should adjust group 0 and DI level value should adjust group 1
+If dropdown menu is set to value 1, then the Mic level value should adjust group 2 and Di level value should adjust group 3
+}
+
+on note
+	disallow_group($ALL_GROUPS)
+	if($item_idx = 0)
+		allow_group(0)
+		allow_group(1)
+		else if($item_idx = 1)
+			allow_group(2)
+			allow_group(3)
+		end if
+	end if
+end on
+
+on ui_control($Machine)
+	$item_idx:=get_control_par(get_ui_id($Machine),$CONTROL_PAR_SELECTED_ITEM_IDX)
+	message($item_idx)
+end on
+
+on ui_control ($micLevel)
+	if($item_idx = 0)
+		set_engine_par($ENGINE_PAR_VOLUME, $micLevel, 1, -1, -1)
+		else if($item_idx = 1)
+			set_engine_par($ENGINE_PAR_VOLUME, $micLevel, 3, -1, -1)
+		end if
+	end if
+end on
+
+on ui_control ($pickupLevel)
+	if($item_idx = 0)
+		set_engine_par($ENGINE_PAR_VOLUME, $pickupLevel, 0, -1, -1)
+		else if($item_idx = 1)
+			set_engine_par($ENGINE_PAR_VOLUME, $pickupLevel, 2, -1, -1)
+		end if 
+	end if
+end on
+
+on ui_control ($attackKnob)
+	$a := 0
+	while ($a < $NUM_LAYERS)
+		set_engine_par($ENGINE_PAR_ATTACK, $attackKnob, $a, find_mod($a, "ENV_AHDSR"), -1)
+		inc($a)
+	end while
+end on
+
+on ui_control ($releaseKnob)
+	$a := 0
+	while ($a < $NUM_LAYERS)
+		set_engine_par($ENGINE_PAR_RELEASE, $releaseKnob, $a, find_mod($a, "ENV_AHDSR"), -1)
+		inc($a)
+	end while
+end on
